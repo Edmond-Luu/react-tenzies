@@ -1,6 +1,7 @@
 # React - Tenzies Game
 
 Click [here](https://edmond-luu.github.io/react-tenzies) or on the image below to see the app!
+
 [![image](https://user-images.githubusercontent.com/26613209/186963727-81e0d683-f9e8-4de1-a21a-e152aa942a8c.png)](https://edmond-luu.github.io/react-tenzies)
 
 This was one of the final projects from Scrimba's React course. The goal of this game is simple; roll all the dice until all of them have the same number value. The player can choose to hold any dice to prevent them from rolling when the roll button is clicked. Once all the dice are of the same value and the player holds all of them, the game will end and confetti will drop down from the top of the screen.
