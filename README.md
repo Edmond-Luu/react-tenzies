@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# React - Tenzies Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Click [here](https://edmond-luu.github.io/react-tenzies) or on the image below to see the app!
 
-## Available Scripts
+This was one of the final projects from Scrimba's React course. The goal of this game is simple; roll all the dice until all of them have the same number value. The player can choose to hold any dice to prevent them from rolling when the roll button is clicked. Once all the dice are of the same value and the player holds all of them, the game will end and confetti will drop down from the top of the screen.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have added some extra features to the game beyond what has been shown on Scrimba. Here are the features that I've incorporated:
+- There are actual dice dots displayed for each dice instead of numbers.
+- A roll counter that displays the number of times the player has rolled the dice.
+- A last rolls counter that displays the number of rolls from the previous game.
+- A high score counter that displays the lowest number of rolls the player used to win a game.
+  - Also, The high score value is saved in the localStorage, which means that if the player reloads the page, the high score value will not reset.
+- When all dice are held, but the game has not yet been won, clicking the roll button will not increase the roll counter.
+- When the game is won, the blue button changes to green.
+- When the game is won, the user cannot unhold any die.
+- Every time when the dice are rolled, there will be a dice roll sound effect. If all dice are held while the game is not yet won and the roll button is clicked, there will be no sound effect.
+- Every time the player wins the game, there will be a celebratory applause sound effect.
