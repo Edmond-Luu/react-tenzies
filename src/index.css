@@ -109,7 +109,7 @@ main {
 .footer{
   background-color: rgb(12, 12, 39);
   color: white;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
   height: 100px;
